@@ -10,7 +10,7 @@ an email, we'd love to hear that people are using this :-)
 
 
 This work is distributed under the Attribution-NonCommercial-ShareAlike 3.0
-license (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+license ([http://creativecommons.org/licenses/by-nc-sa/3.0/](http://creativecommons.org/licenses/by-nc-sa/3.0/ "http://creativecommons.org/licenses/by-nc-sa/3.0/"))
 
 You are free:
 
@@ -29,4 +29,5 @@ Under the following conditions:
 
 
 The legal terms can be found here: 
+
   [http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode](http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode "http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode")
