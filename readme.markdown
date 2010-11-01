@@ -19,6 +19,20 @@ dcSelect(id, options, onchange, no_render)
  - onchange = Function called when the value of the combo is changed.
  - no_render = When this option is set to true, the widget will not automatically display and set its event handlers.
 
+<code>
+dcFontSelect(id, onchange)
+</code>
+
+ - id = The combobox id. Also used as name for the combobox for form posting.
+ - onchange = Function called when the value of the combo is changed.
+
+ <code>
+dcColorSelect(id, onchange)
+</code>
+
+ - id = The combobox id. Also used as name for the combobox for form posting.
+ - onchange = Function called when the value of the combo is changed.
+ 
 ## License
 
 You are free to use the full code or part of it for your own projects as 
