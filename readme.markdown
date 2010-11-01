@@ -8,12 +8,12 @@ This code is in alpha version. It works currently only in Firefox.
 
 Author: Daniel Barsotti / info [at] dreamcraft [dot] ch
 
-=== Known bugs:
+### Known bugs:
 
  - Does not work in IE
  - Display problems in Chrome
 
-=== Todo
+### Todo
 
  - Fix IE and Chrome problems
  - Make it work with keyboard
