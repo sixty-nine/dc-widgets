@@ -29,4 +29,4 @@ Under the following conditions:
 
 
 The legal terms can be found here: 
-  [link http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode](http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode "http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode")
+  [http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode](http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode "http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode")
