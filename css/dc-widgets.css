@@ -1,0 +1,32 @@
+.selector {
+  display: inline;
+}
+
+.selector_input {
+  width: 155px;
+  height: 19px;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding-top: 1px;
+}
+
+.selector_value {
+  height: 18px;
+  padding-left: 2px;
+  margin-left: 1px;
+}
+
+.selector_dropdown {
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 1px;
+}
+
+.selector_item {
+  display: block;
+}
+
+.selector_item_selected {
+  background-color: #ccc;
+}
