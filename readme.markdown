@@ -13,6 +13,7 @@ This work is distributed under the Attribution-NonCommercial-ShareAlike 3.0
 license (http://creativecommons.org/licenses/by-nc-sa/3.0/)
 
 You are free:
+
   - to Share - to copy, distribute and transmit the work
   - to Remix - to adapt the work
   
@@ -28,4 +29,4 @@ Under the following conditions:
 
 
 The legal terms can be found here: 
-  http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode
+  [link http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode](http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode "http://creativecommons.org/licenses/by-nc-sa/3.0/legalcode")
