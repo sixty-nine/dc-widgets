@@ -1,6 +1,23 @@
 # dc-widgets
 
+Javascript widgets.
+
+This library provides a customizable combobox, a color selector and a font selector.
+
+
 Author: Daniel Barsotti / info [at] dreamcraft [dot] ch
+
+
+## Usage
+
+<code>
+dcSelect(id, options, onchange, no_render)
+</code>
+
+ - id = The combobox id. Also used as name for the combobox for form posting.
+ - options = Array of options. Each option must be provided as an array containing the option value and the option text.
+ - onchange = Function called when the value of the combo is changed.
+ - no_render = When this option is set to true, the widget will not automatically display and set its event handlers.
 
 ## License
 
