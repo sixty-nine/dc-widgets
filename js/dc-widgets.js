@@ -53,17 +53,16 @@ function dcSelect(id, options, onchange, no_render) {
     
     input.append('<div class="selector_value">&nbsp;</div>');
     var value = $('#selector_'+id+' .selector_value');
+    var width = input.width() - 17 - 4;
+    value.css({
+      'float': 'left',
+      'margin-right': '1px',
+      'width': width + 'px'
+    });
 
     input.append('<img class="selector_arrow" src="img/combo_arrow.png"/>');
     var image = $('#selector_'+id+' .selector_arrow');
-    var pos = input.width() - image.width() - 1;
-    image.css({
-      'left': pos+'px', 
-      'top': (-value.height())+'px',
-      'position': 'relative'
-    });
-    
-    value.width(input.width() - image.width() - 15);
+
 
     selector.append('<div class="selector_dropdown"></div>');
     var dropdown = $('#selector_'+id+' .selector_dropdown');
@@ -75,7 +74,17 @@ function dcSelect(id, options, onchange, no_render) {
       'z-index': 1});
     
     for(var i = 0; i < this.options.length; i++) {
-      this.render_item(dropdown, this.options[i][1], this.options[i][0]);
+      var text, val;
+      
+      if (options[i] != null) {
+        text = this.options[i][1] || '';
+        val = this.options[i][0] || '';
+      }
+      else {
+        text = '';
+        val = '';
+      }
+      this.render_item(dropdown, text, val);
     }      
   };
   
