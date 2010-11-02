@@ -12,6 +12,7 @@ Author: Daniel Barsotti / info [at] dreamcraft [dot] ch
 ### Known bugs:
 
  - Display problems in IE8
+ - z-index problem when 2 dropdowns are opened at the same time
 
 ### Todo
 
