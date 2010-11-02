@@ -1,6 +1,7 @@
 <html>
   <head>
     <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/dc-core.js"></script>
     <script type="text/javascript" src="js/dc-widgets.js"></script>
     <link rel="stylesheet" type="text/css" href="css/dc-widgets.css" />
   </head>
@@ -26,6 +27,7 @@
       
       Select a color: 
       <script type="text/javascript">
+        new dcDropdown();
       new dcColorSelect('color').set_default('<?php echo $_POST['color'] ?>');
       </script>
       <br/>

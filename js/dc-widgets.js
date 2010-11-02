@@ -1,7 +1,5 @@
-function include(file) {
-  document.write("<script type='text/javascript' src='js/"+file+"'></script>" );
-}
+dcCore.include('dc-widgets.dropdown.js');
+dcCore.include('dc-widgets.select.js');
+dcCore.include('dc-widgets.color-select.js');
+dcCore.include('dc-widgets.font-select.js');
 
-include('dc-widgets.select.js');
-include('dc-widgets.color-select.js');
-include('dc-widgets.font-select.js');
