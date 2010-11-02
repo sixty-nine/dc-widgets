@@ -4,18 +4,19 @@ Javascript widgets.
 
 This library provides a customizable combobox, a color selector and a font selector.
 
-This code is in alpha version. It works currently only in Firefox.
+This code is in alpha version. 
+
 
 Author: Daniel Barsotti / info [at] dreamcraft [dot] ch
 
 ### Known bugs:
 
- - Does not work in IE
- - Display problems in Chrome
+ - Display problems in IE
 
 ### Todo
 
- - Fix IE and Chrome problems
+ - Fix IE display problem
+ - Test in IE7, and... brrrr... IE6
  - Make it work with keyboard
  - Write tests
 
