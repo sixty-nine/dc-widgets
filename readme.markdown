@@ -11,7 +11,7 @@ Author: Daniel Barsotti / info [at] dreamcraft [dot] ch
 
 ### Known bugs:
 
- - Display problems in IE
+ - Display problems in IE8
 
 ### Todo
 
