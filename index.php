@@ -12,15 +12,17 @@
   
   
   $(document).ready(function () {
+  
+    var canvas = dreamcraft.Canvas;
 
-    var imgd = dcCanvas.get_image_data('canvas');
+    var imgd = canvas.get_image_data('canvas');
     
-    dcCanvas.draw_horizontal_hue_bar(imgd, 10, 185, 300, 25);
-    dcCanvas.draw_vertical_hue_bar(imgd, 320, 10, 25, 200);
+    canvas.draw_horizontal_hue_bar(imgd, 10, 185, 300, 25);
+    canvas.draw_vertical_hue_bar(imgd, 320, 10, 25, 200);
     
-    dcCanvas.draw_sv_grid(imgd, 180, 10, 10, 150);
+    canvas.draw_sv_grid(imgd, 180, 10, 10, 150);
 
-    dcCanvas.put_image_data('canvas', imgd);
+    canvas.put_image_data('canvas', imgd);
     
   });
 
@@ -39,19 +41,19 @@
     <form action="index.php" method="post">
       Select a font: 
       <script type="text/javascript">
-      new dcFontSelect('font-select').set_default('<?php echo $_POST['font-select'] ?>');
+      new dreamcraft.Widgets.FontSelect('font-select').set_default('<?php echo $_POST['font-select'] ?>');
       </script>
       <br/>
       
       Select an option: 
       <script type="text/javascript">
-      new dcSelect('my_select', [['option1', 'Option 1'], ['option2', 'Option 2']], function(e, param){ $('#font').val(param);}).set_default('<?php echo $_POST['my_select'] ?>');
+      new dreamcraft.Widgets.Select('my_select', [['option1', 'Option 1'], ['option2', 'Option 2']], function(e, param){ $('#font').val(param);}).set_default('<?php echo $_POST['my_select'] ?>');
       </script>
       <br/>
       
       Select a color: 
       <script type="text/javascript">
-      new dcColorSelect('color').set_default('<?php echo $_POST['color'] ?>');
+      new dreamcraft.Widgets.ColorSelect('color').set_default('<?php echo $_POST['color'] ?>');
       </script>
       <br/>
 

@@ -1,7 +1,7 @@
 /**
  * HTML Select
  */
-function dcSelect(id, options, onchange, no_render) {
+dreamcraft.Widgets.Select = function (id, options, onchange, no_render) {
 
   var object = this;
 

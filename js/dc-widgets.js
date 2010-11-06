@@ -1,7 +1,12 @@
-dcCore.include('dc-canvas.js');
+dreamcraft.Core.include('dc-canvas.js');
 
-dcCore.include('dc-widgets.dropdown.js');
-dcCore.include('dc-widgets.select.js');
-dcCore.include('dc-widgets.color-select.js');
-dcCore.include('dc-widgets.font-select.js');
+dreamcraft.Widgets = function () {
+
+  return {};
+}
+
+dreamcraft.Core.include('dc-widgets.dropdown.js');
+dreamcraft.Core.include('dc-widgets.select.js');
+dreamcraft.Core.include('dc-widgets.color-select.js');
+dreamcraft.Core.include('dc-widgets.font-select.js');
 

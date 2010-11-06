@@ -2,7 +2,7 @@
  * Font combo selector
  */
 
-function dcFontSelect(id, onchange) {
+dreamcraft.Widgets.FontSelect = function (id, onchange) {
 
   this.fonts = [
     ['arial', 'Arial'],
@@ -16,7 +16,7 @@ function dcFontSelect(id, onchange) {
     ['trebuchet', 'Trebuchet']
   ];
 
-  var that = new dcSelect(id, this.fonts, onchange, true);
+  var that = new dreamcraft.Widgets.Select(id, this.fonts, onchange, true);
 
   that.render_item = function(parent, text, val) {
     parent.append('<span class="selector_item" style="font-family: '+val+'; font-size: 18px;"><input type="hidden" value="'+val+'" />'+text+'</span>');

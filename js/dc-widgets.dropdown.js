@@ -4,7 +4,7 @@
 function dcDropdown(no_render) {
 
   var object = this;
-  var id = dcCore.pseudo_uid();
+  var id = dreamcraft.Core.pseudo_uid();
 
   /**
    * Responsible to display the dropdown content

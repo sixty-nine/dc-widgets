@@ -1,4 +1,4 @@
-var dcCanvas = (function () {
+dreamcraft.Canvas = (function () {
 
   var canvas, context, width, height;
 
@@ -46,7 +46,7 @@ var dcCanvas = (function () {
       var inc = 360 / width;
       for (var h = 0; h < 360; h += inc) {
         for (var i = 0; i <= height; i++) {
-          var rgb = this.dcColors.hsv_to_rgb(h, 1, 1);
+          var rgb = this.Colors.hsv_to_rgb(h, 1, 1);
           this.point(imgd, x + Math.round(h/inc), y + i, rgb[0], rgb[1], rgb[2]);
         }
       }
@@ -56,7 +56,7 @@ var dcCanvas = (function () {
       var inc = 360 / height;
       for (var h = 0; h < 360; h += inc) {
         for (var i = 0; i <= width; i++) {
-          var rgb = this.dcColors.hsv_to_rgb(h, 1, 1);
+          var rgb = this.Colors.hsv_to_rgb(h, 1, 1);
           this.point(imgd, x + i, y + Math.round(h/inc), rgb[0], rgb[1], rgb[2]);
         }
       }
@@ -66,7 +66,7 @@ var dcCanvas = (function () {
       var inc = 1 / size;
       for (var v = 0; v <= 1; v += inc) {
         for (var s = 0; s <= 1; s += inc) {
-          var rgb = this.dcColors.hsv_to_rgb(hue, v, s);
+          var rgb = this.Colors.hsv_to_rgb(hue, v, s);
           this.point(imgd, x + Math.round(v * size), y + Math.round(s * size), rgb[0], rgb[1], rgb[2]);
         }
       }
@@ -77,7 +77,7 @@ var dcCanvas = (function () {
 }());
 
 
-dcCanvas.dcColors = function () {
+dreamcraft.Canvas.Colors = (function () {
 
   return {
 
@@ -106,5 +106,5 @@ dcCanvas.dcColors = function () {
     }
   };
 
-}();
+}());
 

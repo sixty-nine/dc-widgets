@@ -1,7 +1,7 @@
 /**
  * Color selector combo
  */
-function dcColorSelect(id, onchange) {
+dreamcraft.Widgets.ColorSelect = function (id, onchange) {
 
   this.colors = [
     ['black', ''], ['#444', ''], ['#666', ''], ['#999', ''],
@@ -30,7 +30,7 @@ function dcColorSelect(id, onchange) {
     ['#6633CC', ''], ['#9933CC', ''], ['#CC33CC', ''], ['#CC3399', ''],
   ];
 
-  var that = new dcSelect(id, this.colors, onchange, true);
+  var that = new dreamcraft.Widgets.Select(id, this.colors, onchange, true);
   var counter = 0;
 
   that.render_item = function(parent, text, val) {
