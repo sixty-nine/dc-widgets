@@ -86,7 +86,6 @@ dreamcraft.Widgets.Select = function (id, options, onchange, no_render) {
     });
 
     input.append('<img class="selector_arrow" src="img/combo_arrow.png"/>');
-    var image = $('#selector_'+id+' .selector_arrow');
 
     // Render the dropdown holding the items
     selector.append('<div class="selector_dropdown"></div>');
