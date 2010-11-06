@@ -6,6 +6,31 @@
     <link rel="stylesheet" type="text/css" href="css/dc-widgets.css" />
   </head>
   <body>
+  
+  
+  <script type="text/javascript">
+  
+  
+  $(document).ready(function () {
+
+    var canvas = new dcCanvas('canvas');
+    var imgd = canvas.get_image_data();
+    
+    canvas.draw_horizontal_hue_bar(imgd, 10, 185, 300, 25);
+    canvas.draw_vertical_hue_bar(imgd, 320, 10, 25, 200);
+    
+    canvas.draw_sv_grid(imgd, 180, 10, 10, 150);
+
+    canvas.put_image_data(imgd);
+    
+  });
+
+  </script>
+  <canvas style="border: 1px solid black;" id="canvas" width="400" height="300">
+  Fallback content, in case the browser does not support Canvas.
+  </canvas>
+  
+  
   <?php 
     if ($_POST['font-select']) echo "You selected the font: ".$_POST['font-select'].'<br/>';
     if ($_POST['my_select']) echo "You selected the option: ".$_POST['my_select'].'<br/>';
@@ -27,7 +52,6 @@
       
       Select a color: 
       <script type="text/javascript">
-        new dcDropdown();
       new dcColorSelect('color').set_default('<?php echo $_POST['color'] ?>');
       </script>
       <br/>
