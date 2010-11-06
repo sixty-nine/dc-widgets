@@ -13,15 +13,14 @@
   
   $(document).ready(function () {
 
-    var canvas = new dcCanvas('canvas');
-    var imgd = canvas.get_image_data();
+    var imgd = dcCanvas.get_image_data('canvas');
     
-    canvas.draw_horizontal_hue_bar(imgd, 10, 185, 300, 25);
-    canvas.draw_vertical_hue_bar(imgd, 320, 10, 25, 200);
+    dcCanvas.draw_horizontal_hue_bar(imgd, 10, 185, 300, 25);
+    dcCanvas.draw_vertical_hue_bar(imgd, 320, 10, 25, 200);
     
-    canvas.draw_sv_grid(imgd, 180, 10, 10, 150);
+    dcCanvas.draw_sv_grid(imgd, 180, 10, 10, 150);
 
-    canvas.put_image_data(imgd);
+    dcCanvas.put_image_data('canvas', imgd);
     
   });
 
