@@ -1,9 +1,9 @@
 dreamcraft.Core.include('dc-canvas.js');
 
-dreamcraft.Widgets = function () {
+dreamcraft.Widgets = (function () {
 
   return {};
-}
+}());
 
 dreamcraft.Core.include('dc-widgets.dropdown.js');
 dreamcraft.Core.include('dc-widgets.select.js');

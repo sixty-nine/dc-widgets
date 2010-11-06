@@ -1,7 +1,7 @@
 /**
  * HTML Select
  */
-function dcDropdown(no_render) {
+dreamcraft.Widgets.Dropdown = function (no_render) {
 
   var object = this;
   var id = dreamcraft.Core.pseudo_uid();
