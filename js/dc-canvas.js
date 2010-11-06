@@ -46,7 +46,7 @@ dreamcraft.Canvas = (function () {
       var inc = 360 / width;
       for (var h = 0; h < 360; h += inc) {
         for (var i = 0; i <= height; i++) {
-          var rgb = this.Colors.hsv_to_rgb(h, 1, 1);
+          var rgb = dreamcraft.Colors.hsv_to_rgb(h, 1, 1);
           this.point(imgd, x + Math.round(h/inc), y + i, rgb[0], rgb[1], rgb[2]);
         }
       }
@@ -56,7 +56,7 @@ dreamcraft.Canvas = (function () {
       var inc = 360 / height;
       for (var h = 0; h < 360; h += inc) {
         for (var i = 0; i <= width; i++) {
-          var rgb = this.Colors.hsv_to_rgb(h, 1, 1);
+          var rgb = dreamcraft.Colors.hsv_to_rgb(h, 1, 1);
           this.point(imgd, x + i, y + Math.round(h/inc), rgb[0], rgb[1], rgb[2]);
         }
       }
@@ -66,44 +66,12 @@ dreamcraft.Canvas = (function () {
       var inc = 1 / size;
       for (var v = 0; v <= 1; v += inc) {
         for (var s = 0; s <= 1; s += inc) {
-          var rgb = this.Colors.hsv_to_rgb(hue, v, s);
+          var rgb = dreamcraft.Colors.hsv_to_rgb(hue, v, s);
           this.point(imgd, x + Math.round(v * size), y + Math.round(s * size), rgb[0], rgb[1], rgb[2]);
         }
       }
     }
 
-  };
-
-}());
-
-
-dreamcraft.Canvas.Colors = (function () {
-
-  return {
-
-    hsv_to_rgb: function (h, s, v) {
-      var c = v * s;
-      var h1 = h / 60;
-      var x = c * (1 - Math.abs((h1 % 2) - 1));
-      var m = v - c;
-      var rgb;
-
-      if (typeof h == 'undefined') rgb = [0, 0, 0];
-      else if (h1 < 1) rgb = [c, x, 0];
-      else if (h1 < 2) rgb = [x, c, 0];
-      else if (h1 < 3) rgb = [0, c, x];
-      else if (h1 < 4) rgb = [0, x, c];
-      else if (h1 < 5) rgb = [x, 0, c];
-      else if (h1 <= 6) rgb = [c, 0, x];
-
-
-      return [255 * (rgb[0] + m), 255 * (rgb[1] + m), 255 * (rgb[2] + m)];
-    },
-
-    rgb_to_html: function (red, green, blue) {
-      var decColor = red + 256 * green + 65536 * blue;
-      return decColor.toString(16);
-    }
   };
 
 }());

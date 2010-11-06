@@ -1,4 +1,6 @@
 dreamcraft.Core.include('dc-canvas.js');
+dreamcraft.Core.include('Colors.js');
+
 
 dreamcraft.Widgets = (function () {
 
@@ -9,4 +11,4 @@ dreamcraft.Core.include('dc-widgets.dropdown.js');
 dreamcraft.Core.include('dc-widgets.select.js');
 dreamcraft.Core.include('dc-widgets.color-select.js');
 dreamcraft.Core.include('dc-widgets.font-select.js');
-
+dreamcraft.Core.include('ColorGrid.js');

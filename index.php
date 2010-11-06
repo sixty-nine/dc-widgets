@@ -6,7 +6,12 @@
     <link rel="stylesheet" type="text/css" href="css/dc-widgets.css" />
   </head>
   <body>
-  
+
+  <script type="text/javascript">
+
+    new dreamcraft.Widgets.ColorGrid(dreamcraft.Colors.Palette.palette(20));
+
+  </script>
   
   <script type="text/javascript">
   
