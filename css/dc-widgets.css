@@ -30,3 +30,7 @@
 .selector_item_selected {
   background-color: #ccc;
 }
+
+.selected {
+  background-color: #ccc;
+}

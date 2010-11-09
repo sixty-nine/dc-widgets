@@ -1,14 +1,19 @@
-dreamcraft.Core.include('dc-canvas.js');
-dreamcraft.Core.include('Colors.js');
-
-
+/**
+ * dreamcraft.Widgets namespace
+ */
 dreamcraft.Widgets = (function () {
 
   return {};
 }());
 
-dreamcraft.Core.include('dc-widgets.dropdown.js');
-dreamcraft.Core.include('dc-widgets.select.js');
-dreamcraft.Core.include('dc-widgets.color-select.js');
-dreamcraft.Core.include('dc-widgets.font-select.js');
-dreamcraft.Core.include('ColorGrid.js');
+
+/**
+ * Include widgets components
+ */
+dreamcraft.Core.include('dreamcraft/widgets/ColorGrid.js');
+dreamcraft.Core.include('dreamcraft/widgets/ColorChooser.js');
+dreamcraft.Core.include('dreamcraft/widgets/List.js');
+dreamcraft.Core.include('dreamcraft/widgets/FontList.js');
+dreamcraft.Core.include('dreamcraft/widgets/FontSelector.js');
+dreamcraft.Core.include('dreamcraft/widgets/BorderChooser.js');
+dreamcraft.Core.include('dreamcraft/widgets/Tabs.js');

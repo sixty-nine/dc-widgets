@@ -29,3 +29,8 @@ dreamcraft.Core = (function () {
 
 }());
 
+/**
+ * Include other core components
+ */
+dreamcraft.Core.include('dreamcraft/core/Colors.js');
+dreamcraft.Core.include('dreamcraft/core/Dimensions.js');
