@@ -19,7 +19,7 @@ $(document).ready(function () {
   new dreamcraft.Widgets.ColorChooser('title_font_color', {'height': '170px'}, function (color){
     $('#preview h1').css('color', color);
   });
-  new dreamcraft.Widgets.FontSelector('title_font_selector', {},
+  new dreamcraft.Widgets.FontChooser('title_font_selector', {},
     function (font, size, bold, italic) {
       if (font) { $('#preview h1').css('font-family', font); }
       if (size) { $('#preview h1').css('font-size', size); }
@@ -30,7 +30,7 @@ $(document).ready(function () {
   new dreamcraft.Widgets.ColorChooser('text_font_color', {'height': '170px'}, function (color){
     $('#preview div.description').css('color', color);
   });
-  new dreamcraft.Widgets.FontSelector('text_font_selector', {},
+  new dreamcraft.Widgets.FontChooser('text_font_selector', {},
     function (font, size, bold, italic) {
       if (font) { $('#preview div.description').css('font-family', font); }
       if (size) { $('#preview div.description').css('font-size', size); }
@@ -41,7 +41,7 @@ $(document).ready(function () {
   new dreamcraft.Widgets.ColorChooser('field_title_font_color', {'height': '170px'}, function (color){
     $('#preview label').css('color', color);
   });
-  new dreamcraft.Widgets.FontSelector('field_title_font_selector', {},
+  new dreamcraft.Widgets.FontChooser('field_title_font_selector', {},
     function (font, size, bold, italic) {
       if (font) { $('#preview label').css('font-family', font); }
       if (size) { $('#preview label').css('font-size', size); }
@@ -52,7 +52,7 @@ $(document).ready(function () {
   new dreamcraft.Widgets.ColorChooser('field_text_font_color', {'height': '170px'}, function (color){
     $('#preview input').css('color', color);
   });
-  new dreamcraft.Widgets.FontSelector('field_text_font_selector', {},
+  new dreamcraft.Widgets.FontChooser('field_text_font_selector', {},
     function (font, size, bold, italic) {
       if (font) { $('#preview input').css('font-family', font); }
       if (size) { $('#preview input').css('font-size', size); }

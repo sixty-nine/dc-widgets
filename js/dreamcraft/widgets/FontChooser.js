@@ -1,4 +1,4 @@
-dreamcraft.Widgets.FontSelector = function (container_id, options, onchange) {
+dreamcraft.Widgets.FontChooser = function (container_id, options, onchange) {
 
   options = options || {};
 
