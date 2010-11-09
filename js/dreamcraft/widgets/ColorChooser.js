@@ -2,8 +2,12 @@ dreamcraft.Widgets.ColorChooser = function (container_id, options, onchange) {
   
   options = options || {};
 
+  // Calculate the color palette only once
+  if (! dreamcraft.Widgets.ColorChooser.colors) {
+    dreamcraft.Widgets.ColorChooser.colors = dreamcraft.Colors.Palette.palette(20);
+  }
+
   var id = dreamcraft.Core.pseudo_uid();
-  var colors = dreamcraft.Colors.Palette.palette(20);
   var height = options['height'] || '100px';
   var width = options['width'] || '270px';
 
@@ -48,9 +52,9 @@ dreamcraft.Widgets.ColorChooser = function (container_id, options, onchange) {
     
     container.append('<div style="clear: both"></div>');
    
-    for(var i = 0; i < colors.length; i++) {
-      for(var j = 0; j < colors[i].length; j++) {
-        $('.colors', container).append('<span style="display: block; float: left; margin-right: 1px; margin-top: 1px; border: 1px solid black; width: 16px; height: 16px; background-color: '+colors[i][j]+'">&nbsp;</span>');
+    for(var i = 0; i < dreamcraft.Widgets.ColorChooser.colors.length; i++) {
+      for(var j = 0; j < dreamcraft.Widgets.ColorChooser.colors[i].length; j++) {
+        $('.colors', container).append('<span style="display: block; float: left; margin-right: 1px; margin-top: 1px; border: 1px solid black; width: 16px; height: 16px; background-color: '+dreamcraft.Widgets.ColorChooser.colors[i][j]+'">&nbsp;</span>');
       }
       $('.colors', container).append('<br/>');
     }
