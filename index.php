@@ -4,7 +4,7 @@
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/dc-core.js"></script>
     <script type="text/javascript" src="js/dc-widgets.js"></script>
-    <script type="text/javascript" src="js/ff-editor.js"></script>
+    <script type="text/javascript" src="js/ff-template-editor.js"></script>
     <link rel="stylesheet" type="text/css" href="css/dc-widgets.css" />
     <link rel="stylesheet" type="text/css" href="css/ff-editor.css" />
   </head>
